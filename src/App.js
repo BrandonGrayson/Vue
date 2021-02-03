@@ -7,7 +7,7 @@ function App() {
 	return (
 		<div className="header-el">
 			<Header />
-      <Input />
+      		<Input />
 		</div>
 	);
 }
