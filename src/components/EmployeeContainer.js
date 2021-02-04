@@ -45,9 +45,10 @@ class EmployeeContainer extends Component {
 
         })
         return (
-            <div className='container'>
-                <h1>This is where the employee data should go</h1>
-            </div>
+            // <table className='table'>
+            //     <h1>This is where the employee data should go</h1>
+            // </table>
+            <UserCard />
         ); 
     }
 }
