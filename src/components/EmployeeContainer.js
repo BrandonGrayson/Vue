@@ -27,7 +27,14 @@ class EmployeeContainer extends Component {
         console.log('STATE-->', this.state)
         // set value of users variable to users array
         const users = this.state.users
-        
+        // iterate over the array of users
+        const newUsers = users.map((el, index) => {
+            console.log("This is an Mapped El--->", el)
+            // destructure location components needed
+            const {street, city, state, country} = el.location
+            // console.log(el.location)
+
+        })
 
         
 
