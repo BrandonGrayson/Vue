@@ -34,12 +34,14 @@ class EmployeeContainer extends Component {
             const {street, city, state, country} = el.location
             // console.log(el.location)
             const {email} = el.email
-            console.log("This the Email-->", el.email)
-
+            // console.log("This the Email-->", el.email)
+            const { name } = el.name
+            // console.log("This the name--->", el.name)
+            const { phone } = el.phone
+            // console.log('This is the phone number--->', el.phone)
+            const { thumbnail } = el.picture
+            // console.log("This is image thumbnail--->", el.picture)
         })
-
-        
-
         return (
             <div className='container'>
                 <h1>This is where the employee data should go</h1>
