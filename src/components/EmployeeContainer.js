@@ -1,7 +1,9 @@
 // imported react, destructured componenent
 import React, { Component } from "react"
+import UserCard from './UserCard'
 // imported api
 import { search } from "../utils/API"
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 // create 
 class EmployeeContainer extends Component {
@@ -23,6 +25,11 @@ class EmployeeContainer extends Component {
 
     render() {
         console.log('STATE-->', this.state)
+        // set value of users variable to users array
+        const users = this.state.users
+        
+
+        
 
         return (
             <div className='container'>
