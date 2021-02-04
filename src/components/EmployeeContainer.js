@@ -30,9 +30,11 @@ class EmployeeContainer extends Component {
         // iterate over the array of users
         const newUsers = users.map((el, index) => {
             console.log("This is an Mapped El--->", el)
-            // destructure location components needed
+            // destructure components needed
             const {street, city, state, country} = el.location
             // console.log(el.location)
+            const {email} = el.email
+            console.log("This the Email-->", el.email)
 
         })
 
