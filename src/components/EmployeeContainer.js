@@ -21,20 +21,18 @@ class EmployeeContainer extends Component {
             .then(res => this.setState({
                 users:res.data.results
             }))
+            // .then(this.mapUsers())
+            // console.log('Users have been updated---->' )
     }
 
     mapUsers () {
-        
-    }
-
-
-    render() {
         console.log('STATE-->', this.state)
         // set value of users variable to users array
         const users = this.state.users
-        console.log(users)
+        // console.log(users)
         // iterate over the array of users
         const newUsers = users.map((el, index) => {
+            console.log("This should be the USERS--->", users)
             console.log("This is an Mapped El--->", el)
             // destructure components needed
             const {street, city, state, country} = el.location
@@ -46,18 +44,19 @@ class EmployeeContainer extends Component {
             const { phone } = el.phone
             // console.log('This is the phone number--->', el.phone)
             const { thumbnail } = el.picture
-            // console.log("This is image thumbnail--->", el.picture)
-
+            // console.log("This is image thumbnail--->", el.picture)             
         })
+    }
+
+    render() {
         return (
             // <table className='table'>
             //     <h1>This is where the employee data should go</h1>
             // </table>
-           
-                <UserCard />
-            
-            
-            
+                
+                <UserCard
+                    
+                />
         ); 
     }
 }
