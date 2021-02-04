@@ -27,6 +27,7 @@ class EmployeeContainer extends Component {
         console.log('STATE-->', this.state)
         // set value of users variable to users array
         const users = this.state.users
+        console.log(users)
         // iterate over the array of users
         const newUsers = users.map((el, index) => {
             console.log("This is an Mapped El--->", el)
@@ -41,6 +42,7 @@ class EmployeeContainer extends Component {
             // console.log('This is the phone number--->', el.phone)
             const { thumbnail } = el.picture
             // console.log("This is image thumbnail--->", el.picture)
+
         })
         return (
             <div className='container'>
