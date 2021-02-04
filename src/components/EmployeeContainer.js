@@ -23,6 +23,11 @@ class EmployeeContainer extends Component {
             }))
     }
 
+    mapUsers () {
+        
+    }
+
+
     render() {
         console.log('STATE-->', this.state)
         // set value of users variable to users array
@@ -48,7 +53,11 @@ class EmployeeContainer extends Component {
             // <table className='table'>
             //     <h1>This is where the employee data should go</h1>
             // </table>
-            <UserCard />
+           
+                <UserCard />
+            
+            
+            
         ); 
     }
 }
