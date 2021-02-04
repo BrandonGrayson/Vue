@@ -18,45 +18,27 @@ class EmployeeContainer extends Component {
     componentDidMount() {
         console.log("Prepare to be Mounted")
         search()
-            .then(res => this.setState({
-                users:res.data.results
-            }))
-            // .then(this.mapUsers())
-            // console.log('Users have been updated---->' )
+           .then(res => 
+            {
+                console.log(res.data.results)
+                this.setState({users:res.data.results})
+            })  
     }
 
     mapUsers () {
         console.log('STATE-->', this.state)
         // set value of users variable to users array
         const users = this.state.users
-        // console.log(users)
+        console.log('These Are the USERS--->', users)
         // iterate over the array of users
-        const newUsers = users.map((el, index) => {
-            console.log("This should be the USERS--->", users)
-            console.log("This is an Mapped El--->", el)
-            // destructure components needed
-            const {street, city, state, country} = el.location
-            // console.log(el.location)
-            const {email} = el.email
-            // console.log("This the Email-->", el.email)
-            const { name } = el.name
-            // console.log("This the name--->", el.name)
-            const { phone } = el.phone
-            // console.log('This is the phone number--->', el.phone)
-            const { thumbnail } = el.picture
-            // console.log("This is image thumbnail--->", el.picture)             
-        })
+       
     }
 
     render() {
-        return (
-            // <table className='table'>
-            //     <h1>This is where the employee data should go</h1>
-            // </table>
-                
-                <UserCard
-                    
-                />
+        return (         
+               this.state.users ? (<UserCard
+                    users= {this.state.users}
+                />) : (<p></p>)
         ); 
     }
 }
