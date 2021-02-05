@@ -16,7 +16,7 @@ const UserCard = (props) => {
             // console.log(el.location)
             const {email} = el.email
             // console.log("This the Email-->", el.email)
-            const { first } = el.name.first
+            const { first, last } = el.name
             // console.log("This the name--->", el.name)
             const { phone } = el.phone
             // console.log('This is the phone number--->', el.phone)
@@ -25,7 +25,7 @@ const UserCard = (props) => {
             trs.push(<tr key={index}>
                     <td> 
                         <img src={thumbnail}/> </td>
-                        {/* <td>{name}</td> */}
+                        <td> {first} {last} </td>
                     </tr>
          );
         });
