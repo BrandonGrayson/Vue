@@ -14,11 +14,11 @@ const UserCard = (props) => {
             // destructure components needed
             const {street, city, state, country} = el.location
             // console.log(el.location)
-            const {email} = el.email
+            const email = el.email
             // console.log("This the Email-->", el.email)
             const { first, last } = el.name
             // console.log("This the name--->", el.name)
-            const { phone } = el.phone
+            const  phone  = el.phone
             // console.log('This is the phone number--->', el.phone)
             const { thumbnail } = el.picture
             // console.log("This is image thumbnail--->", el.picture)   
@@ -26,6 +26,9 @@ const UserCard = (props) => {
                     <td> 
                         <img src={thumbnail}/> </td>
                         <td> {first} {last} </td>
+                        <td>{email}</td>
+                        <td> {phone}</td>
+                        <td> </td>
                     </tr>
          );
         });
