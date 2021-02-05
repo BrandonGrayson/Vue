@@ -42,7 +42,7 @@ const UserCard = (props) => {
                     <th>Name</th>
                     <th>Email</th>
                     <th>Phone #</th>
-                    <th>Location</th>
+                    <th>D.O.B.</th>
                 </tr>
             </thead>
             <tbody>
