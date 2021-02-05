@@ -12,7 +12,7 @@ const UserCard = (props) => {
             console.log("This is an Mapped El--->", el)
             console.log("This is the INDEX--->", index)
             // destructure components needed
-            const {street, city, state, country} = el.location
+            const { age } = el.dob
             // console.log(el.location)
             const email = el.email
             // console.log("This the Email-->", el.email)
@@ -28,7 +28,7 @@ const UserCard = (props) => {
                         <td> {first} {last} </td>
                         <td>{email}</td>
                         <td> {phone}</td>
-                        <td> </td>
+                        <td> { age } </td>
                     </tr>
          );
         });
