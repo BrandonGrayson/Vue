@@ -2,8 +2,8 @@ import React from 'react'
 
 const Input = props => {
 
-    const handleInputChange = () => {
-        console.log( "They Made A CHANGE------>")
+    const handleInputChange = (event) => {
+        console.log( "They Made A CHANGE------>", event.nativeEvent.data)
     } 
     return (
         <form className='mt-3 d-flex justify-content-center' id='input'>
