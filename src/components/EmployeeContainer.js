@@ -25,15 +25,14 @@ class EmployeeContainer extends Component {
             })  
     }
 
-    mapUsers () {
-        console.log('STATE-->', this.state)
-        // set value of users variable to users array
-        const users = this.state.users
-        console.log('These Are the USERS--->', users)
-        // iterate over the array of users
+    // mapUsers () {
+    //     console.log('STATE-->', this.state)
+    //     // set value of users variable to users array
+    //     const users = this.state.users
+    //     console.log('These Are the USERS--->', users)
+    //     // iterate over the array of users
        
-    }
-
+    // }
     render() {
         return (         
                this.state.users ? (<UserCard
