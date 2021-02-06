@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Vue/static/css/main.34b06d5b.chunk.css",
+    "main.js": "/Vue/static/js/main.6667072b.chunk.js",
+    "main.js.map": "/Vue/static/js/main.6667072b.chunk.js.map",
+    "runtime-main.js": "/Vue/static/js/runtime-main.e9049342.js",
+    "runtime-main.js.map": "/Vue/static/js/runtime-main.e9049342.js.map",
+    "static/css/2.150d169a.chunk.css": "/Vue/static/css/2.150d169a.chunk.css",
+    "static/js/2.5c9b6c24.chunk.js": "/Vue/static/js/2.5c9b6c24.chunk.js",
+    "static/js/2.5c9b6c24.chunk.js.map": "/Vue/static/js/2.5c9b6c24.chunk.js.map",
+    "static/js/3.1ec7d2cc.chunk.js": "/Vue/static/js/3.1ec7d2cc.chunk.js",
+    "static/js/3.1ec7d2cc.chunk.js.map": "/Vue/static/js/3.1ec7d2cc.chunk.js.map",
+    "index.html": "/Vue/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/Vue/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.34b06d5b.chunk.css.map": "/Vue/static/css/main.34b06d5b.chunk.css.map",
+    "static/js/2.5c9b6c24.chunk.js.LICENSE.txt": "/Vue/static/js/2.5c9b6c24.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9049342.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.5c9b6c24.chunk.js",
+    "static/css/main.34b06d5b.chunk.css",
+    "static/js/main.6667072b.chunk.js"
+  ]
+}
