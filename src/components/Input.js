@@ -8,7 +8,7 @@ const Input = props => {
     return (
         <form className='mt-3 d-flex justify-content-center' id='input'>
             <label>
-                <input type="text" onChange={props.handleInputChange}  placeholder='Search' name="name" />
+                <input type="text" onChange={handleInputChange}  placeholder='Search' name="name" />
             </label>
         </form>
     )
